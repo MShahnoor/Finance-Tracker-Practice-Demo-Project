@@ -1,5 +1,19 @@
 @import "bootstrap/dist/css/bootstrap";
 
+.root {
+  --bs-navbar-padding-x: 7rem;
+  --bs-navbar-padding-y: 0.5rem;
+}
+
 .logout-btn {
   margin-right: 5px;
+}
+
+.container {
+  padding: 0;
+}
+
+#navbar-custom {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }

@@ -21,4 +21,8 @@ class User < ApplicationRecord
     under_stock_limit? && !stock_already_tracked?(ticker)
   end
 
+  def get_full_name
+    "#{first_name} #{last_name}"
+  end
+
 end
