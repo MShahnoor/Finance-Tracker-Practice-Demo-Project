@@ -36,4 +36,5 @@ class Stock < ApplicationRecord
   def self.already_exists(ticker)
     find_by(ticker: ticker)
   end
+
 end
