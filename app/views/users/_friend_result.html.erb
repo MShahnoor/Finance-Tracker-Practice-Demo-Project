@@ -11,7 +11,7 @@
                      <td>  <strong>Name: </strong> <%= friend.get_full_name %> </td>
                      <td>  <strong>Email: </strong> <%= friend.email %> </td>
                      <td>
-                        <%= link_to "View Profile",'#',class: 'btn btn-outline-secondary'  %>
+                        <%= link_to "View Profile",user_path(friend),class: 'btn btn-outline-secondary'  %>
                         <% if current_user.not_friend_with?(friend.id)  %>
                             <%= link_to 'Follow', friendships_path(friend: friend), class: 'btn btn-primary',method: :post%>
                         <% else %>
